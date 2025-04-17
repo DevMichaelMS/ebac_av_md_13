@@ -56,3 +56,10 @@ section {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.carousel-caption h6 {
+    font-size: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 0.875rem;
+}
