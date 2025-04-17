@@ -10,6 +10,21 @@
 </head>
 <body>
 
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalLabel">Sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Obrigado por assinar nossa Newsletter! Você receberá as últimas novidades e dicas diretamente no seu email.
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="boasVindas" tabindex="-1" aria-labelledby="boasVindasLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -504,7 +519,7 @@
     <div class="container text-center">
         <h2 class="mb-4">Assine nossa Newsletter</h2>
         <p class="mb-4">Receba as ultimas novidades, dicas e atualizações diretamente no seu email!</p>
-        <form action="#" method="POST" class="row g-3 justify-content-center">
+        <form id="newsletterForm" action="#" method="POST" class="row g-3 justify-content-center">
             <div class="col-md-6">
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required>
             </div>
