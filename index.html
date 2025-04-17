@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/Cherry_29.png" type="image/x-icon">
+    <title>SoS: Friends of Mineral Town</title>
+</head>
+<body>
+
+    <div class="modal fade" id="boasVindas" tabindex="-1" aria-labelledby="boasVindasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-tittle" id="boasVindasLabel">Bem-vindo ao Blog SoS: Friends of Mineral Town</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="popupCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imgs/explore.jpg" class="d-block w-100" alt="slide 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Explore a Fazenda!</h5>
+                                    <p>Descubra como cultivar e criar animais em um ambiente relaxante.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/amigos.jpg" class="d-block w-100" alt="slide 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Faça Amigos!</h5>
+                                    <p>Interaja com os aldeões e construa realacionamentos duradouros.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/event.jpg" class="d-block w-100" alt="slide 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Participe de Festivais</h5>
+                                    <p>Divirta-se em eventos sazonais e torne-se parte da comunidade.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#popupCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#popupCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center w-100">Aproveite sua estadia em Mineral Town!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header id="cabecalho" class="navbar bg-light navbar-light fixed-top">
+            <div class="container d-flex justify-content-between align-items-center">
+                <img id="logo" src="imgs/logo.png" alt="Logo">
+                <nav class="navbar navbar-expand-lg">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home"><img src="imgs/home.png" alt=""> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pretendentes"><img src="imgs/rel-icon2.png" alt=""> Pretendentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ferramentas"><img src="imgs/Watering_Can.png" alt=""> Ferramentas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#receitas"><img src="imgs/receitas.png" alt=""> Receitas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button id="inbox" type="button" class="btn btn-warning" onclick="showToast()">Inbox (15)</button>
+
+
+                
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="toastInbox" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Mensagens</strong>
+                            <small class="text-muted">Agora</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                        </div>
+                        <div class="toast-body">
+                            Você tem 15 novas mensagens!<br>
+                            <ul>
+                                <li>Mensagem 1</li>
+                                <li>Mensagem 2</li>
+                                <li>Mensagem 3</li>
+                                <li>Mensagem 4</li>
+                                <li>Mensagem 5</li>
+                                <li>...</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="home">
+            <div class="container-fluid bg-light text-center">
+                <h2>Bem-vindo ao Blog SoS: Friends of Mineral Town</h2>
+                <p>Um jogo de simulação de fazenda onde você pode cultivar, criar animais e fazer amigos na cidade.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div id="carousel-btn" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-wrap="true">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="imgs/slide5.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="imgs/slide2.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="imgs/slide3.png" alt="">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="imgs/slide4.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="imgs/slide1.jpeg" alt="">
+                        <div class="carousel-caption"></div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-btn" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-btn" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+        
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-btn" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carousel-btn" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-btn" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-btn" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel-btn" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+        </div>
+    <section id="pretendentes">
+        <div class="container-fluid bg-light text-center">
+            <h2>Pretendentes</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Ran
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTAnn1.png" alt="Imagem de Ran">
+                            <div class="card-body">
+                                <h4 class="card-title bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Verão 17</h5>
+                                <p class="card-text bg-success text-white">
+                                    Ran é uma garota alegre que gosta de passar tempo ao ar livre. Ela também ajuda o pai a administrar a pousada. 
+                                    Dudley tem muito orgulho da filha, mesmo achando-a um pouco rude. A mãe de Ran faleceu há muito tempo, deixando 
+                                    Dudley e Ran sozinhos para cuidarem um do outro. Ran adora cozinhar e costuma vencer o Festival de Culinária. 
+                                    Ran foi chamada de Ann na adaptação original em inglês do jogo para GBA.
+                                </p>
+                                <a href="#" class="btn btn-success btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Jennifer
+                            </div>
+                            <img class="img-fluid" src="imgs/Jennifer1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Inverno 2</h5>
+                                <p class="card-text bg-success text-white">Jennifer é uma nova personagem adicionada à versão para Nintendo Switch de Friends of Mineral Town . Ela morava em uma cidade grande, mas decidiu se mudar para um lugar menos agitado para ficar mais perto da natureza. Ela montou uma barraca na margem do Lago da Mãe para observar e absorver a energia do ambiente ao seu redor.</p>
+                                <a href="#" class="btn btn-success btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Deusa da Colheita
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTHarvest_Goddess1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Primavera 8</h5>
+                                <p class="card-text bg-success text-white">A adorável deusa é um ser mágico que vive no lago na base da cachoeira perto da fonte termal. Ela vigia os aldeões, mas eles não podem vê-la. Ela também vigia você e o parabenizará quando você atingir marcos no jogo, como chegar a 100.000 passos no pedômetro ou chegar ao fundo de uma mina. Só você pode ver a deusa. Jogar um presente no lago dela como oferenda fará com que ela apareça, agradeça pelo presente e desapareça novamente. Ela também aparece na sua TV durante a primeira semana de cada ano para jogar um jogo de "alto/baixo" com você.</p>
+                                <a href="#" class="btn btn-success btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Elly
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTElli1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Primavera 16</h5>
+                                <p class="card-text bg-success text-white">Elly mora e trabalha na clínica em Mineral Town. Ela quer ser uma boa enfermeira, então ajuda o Doutor com qualquer coisa médica. Quando o hospital está fechado às quartas-feiras, ela vai visitar sua avó Ellen e seu irmãozinho Yu. Os pais de Elly faleceram há muito tempo e cabe a ela e Ellen criar Yu. Elly os ama muito.
+
+                                    Elly era chamada de "Elli" no jogo original para GBA..</p>
+                                <a href="#" class="btn btn-success btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Karen
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTKaren1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Outono 15</h5>
+                                <p class="card-text bg-success text-white">Karen é a filha teimosa de Jeff e Sasha. Ela ajuda a administrar o armazém, mas, na maioria das vezes, deixa o pai cuidar do lugar. Karen é extrovertida, pé no chão e confiável, mas deseja um pouco de romance. Às vezes, você a encontrará à noite na praia, admirando o oceano.</p>
+                                <a href="#" class="btn btn-success btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Marie
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTMary1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Inverno 20</h5>
+                                <p class="card-text bg-success text-white">Marie administra a biblioteca de Mineral Town, no canto noroeste da cidade. Ela é um pouco quieta, assim como os livros que zela. Seu pai, Basil, escreveu muitos livros sobre as criaturas e plantas que vivem ao redor da vila, então Marie os guarda na biblioteca. Marie adora quando há visitantes na biblioteca vazia, pois assim ela pode compartilhar seus livros com outra pessoa.
+
+                                    Marie foi chamada de Mary na adaptação original em inglês do jogo de GBA.</p>
+                                <a href="#" class="btn btn-success  btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                Popuri
+                            </div>
+                            <img class="img-fluid" src="imgs/SMTPopuri1.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-tittle bg-success text-white">Aniversário:</h4>
+                                <h5 class="card-subtitle bg-success text-white">Verão 3</h5>
+                                <p class="card-text bg-success text-white">Popuri mora na granja com a mãe, Lillia, e o irmão mais velho, Rick. Ela adora galinhas e ajuda na mercearia da fazenda sempre que pode. Ela tem uma personalidade efervescente e um espírito forte, mas às vezes age como uma criança. Ela brinca com as outras duas crianças da cidade e também participa do Festival da Abóbora para crianças.</p>
+                                <a href="#" class="btn btn-success  btn-lg">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ferramentas">
+    <div class="container-fluid bg-light text-center">
+        <h2>Ferramentas</h2>
+
+        <div class="container">
+            <h4>Atualizações das Ferramentas</h4>
+            <p>
+                Ao começar a cultivar, você recebe cinco ferramentas de Nível 1 para usar: o Martelo, a Enxada, a Foice, o Machado e o Regador. 
+                Com essas ferramentas baratas/de ferro, você pode limpar os detritos da sua plantação negligenciada e plantar alguns vegetais. 
+                A sexta ferramenta é a Vara de Pesca Barata, que você receberá de Zack ao visitar sua casa em Mineral Beach. 
+                Se ele não lhe der a vara durante a visita, certifique-se de deixar um espaço livre na seção Ferramentas da sua mochila. 
+                As ferramentas podem ser guardadas na Caixa de Ferramentas da sua fazenda quando você não quiser carregá-las.
+            </p>
+
+            <p>
+                O efeito de área para três das ferramentas é (distância x alcance):
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center">
+                    <thead class="table-success">
+                        <tr>
+                            <th>Metal</th>
+                            <th>Enxada</th>
+                            <th>Foice</th>
+                            <th>Regador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Padrão/Ferro</td>
+                            <td>1 x 1</td>
+                            <td>1 x 1</td>
+                            <td>1 x 1</td>
+                        </tr>
+                        <tr>
+                            <td>Cobre</td>
+                            <td>2 x 1</td>
+                            <td>1 x 3</td>
+                            <td>1 x 3</td>
+                        </tr>
+                        <tr>
+                            <td>Prata</td>
+                            <td>3 x 1</td>
+                            <td>2 x 6</td>
+                            <td>2 x 6</td>
+                        </tr>
+                        <tr>
+                            <td>Ouro</td>
+                            <td>4 x 1</td>
+                            <td>3 x 3</td>
+                            <td>3 x 3</td>
+                        </tr>
+                        <tr>
+                            <td>Mithril</td>
+                            <td>6 x 1</td>
+                            <td>5 x 5</td>
+                            <td>3 x 5</td>
+                        </tr>
+                        <tr>
+                            <td>Amaldiçoada/Abençoada</td>
+                            <td>6 x 5</td>
+                            <td>7 x 7</td>
+                            <td>6 x 9</td>
+                        </tr>
+                        <tr>
+                            <td>Mitica</td>
+                            <td>9 x 9</td>
+                            <td>9 x 9</td>
+                            <td>9 x 9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                O Martelo e o Machado atingirão uma rocha ou toco/galho de árvore, com níveis aprimorados exigindo menos golpes para destruir o objeto alvo. 
+                O Martelo/Machado de nível Mítico destruirá todos os objetos na área quando energizado, então tome cuidado, pois esse é o resultado pretendido antes de avançar para esse nível de ferramenta.
+            </p>
+
+            <h4>Melhorias de Ferramentas</h4>
+            <p>
+                Essas ferramentas de Ferro/Barato (nível 1) podem ser aprimoradas levando-as para a forja ao norte da sua fazenda. 
+                A loja do Saibara abre de sexta a quarta-feira, das 10h às 16h. O ferreiro também vende outras ferramentas, como o Pincel, mas não as seis ferramentas principais.
+            </p>
+
+            <table class="table table-bordered table-striped table-hover text-center">
+                <thead class="table-success">
+                    <tr>
+                        <th>Metal</th>
+                        <th>Custo</th>
+                        <th>EXP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cobre</td>
+                        <td>1000G</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Prata</td>
+                        <td>2000G</td>
+                        <td>28%</td>
+                    </tr>
+                    <tr>
+                        <td>Ouro</td>
+                        <td>3000G</td>
+                        <td>55%</td>
+                    </tr>
+                    <tr>
+                        <td>Mithril</td>
+                        <td>5000G</td>
+                        <td>100%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Você precisará usar a ferramenta para ganhar experiência nela. Você pode ver os níveis da sua ferramenta pressionando o botão X para abrir o menu principal, 
+                navegando até o menu de ferramentas e pressionando o botão Mais para abrir a janela de níveis. O jogo também o alertará quando você tiver ganhado experiência suficiente para ganhar um nível na sua ferramenta.
+            </p>
+
+            <p>
+                Você ganhará 100 pontos por usar a ferramenta para o propósito pretendido (por exemplo, usar o martelo para quebrar uma pedra) e 50 pontos por apenas balançar a ferramenta. 
+                O máximo de pontos para cada ferramenta é 65.535 (100%). Você também pode ganhar experiência na enxada e no martelo enquanto os usa durante sua exploração das minas. 
+                Você também pode ganhar pontos de experiência ficando dentro de edifícios (como sua casa de fazenda) e balançando as ferramentas.
+            </p>
+
+            <p>
+                Você também precisará de minério bruto para Saibara usar para remodelar a ferramenta. Você pode obter minério na Mina de Nascente, ao lado da Fonte Termal, na floresta. 
+                O minério está escondido nas rochas que você esmagará com um Martelo enquanto explora as profundezas da mina. Quanto mais fundo você explorar a mina, mais raros serão os minérios encontrados.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <section id="receitas">
+    <div class="container-fluid bg-light text-center">
+        <h2>Receitas</h2>
+        <p>
+            Cozinhar refeições é uma atividade que pode beneficiar tanto você quanto seu relacionamento com os aldeões de Mineral Town. 
+            Você pode comer refeições prontas para restaurar sua resistência e fadiga, ou presenteá-las para aumentar seus pontos de amor 
+            e amizade com outras pessoas. Receitas prontas também podem ser vendidas para Huang em sua loja.
+        </p>
+        <img class="img-fluid" src="imgs/cooking_img2.jpg" alt="">
+        <p>
+            São 120 receitas para colecionar. O livro de receitas é dividido em 5 páginas com 21 receitas cada:
+        </p>
+        <a href="#">Receitas de Culinária, Página 1 (001 a 024)</a><br>
+        <a href="#">Receitas de Culinária, Página 2 (025 a 048)</a><br>
+        <a href="#">Receitas de Culinária, Página 3 (049 a 072)</a><br>
+        <a href="#">Receitas de Culinária, Página 4 (073 a 096)</a><br>
+        <a href="#">Receitas de Culinária, Página 5 (097 a 120)</a><br>
+
+        <p>
+            Para começar a cozinhar, você precisará melhorar sua casa. Gotts oferece a primeira opção de reforma por 150 madeira, 
+            50 pedras e 3000 G. Ele levará 3 dias para melhorar sua casa para um tamanho médio. A reforma incluirá a área da cozinha 
+            e duas receitas culinárias: sashimi e zaru soba.
+        </p>
+
+        <p>
+            Infelizmente, você não pode preparar essas refeições sem ter os utensílios de cozinha adequados. Eles são vendidos no supermercado 
+            do Jeff, e ele enviará uma carta por correio quando um utensílio de cozinha estiver disponível em sua loja de artigos para a casa:
+        </p>
+
+        <ul class="text-start">
+            <li>Conjunto de temperos (2500 G): O dia em que a atualização da casa média for concluída</li>
+            <li>Panela de cozimento (1000 G): 10 dias após o conjunto de temperos entrar em promoção</li>
+            <li>Frigideira (1200 G): 10 dias após a venda da Panela</li>
+            <li>Faca (1500 G): 10 dias após a Frigideira entrar em promoção</li>
+            <li>Forno (2500 G): 10 dias após a faca entrar em promoção</li>
+            <li>Rolo de Massa (750 G): 10 dias após o forno entrar em promoção</li>
+            <li>Batedeira (1200 G): 10 dias após o lançamento do Rolling Pin</li>
+            <li>Batedor (500 G): 10 dias após o lançamento do Mixer</li>
+        </ul>
+
+        <p>
+            Você também pode comprar uma Geladeira da Gotts (2500 G) para armazenar os ingredientes das suas refeições. 
+            Uma Geladeira Grande (5000 G) fica disponível para compra após você atualizar sua casa para o tamanho Grande 
+            e possuir a Geladeira normal por pelo menos 3 dias.
+        </p>
+
+        <h4>Como aprender receitas</h4>
+        <p>
+            Friends of Mineral Town não permite culinária experimental como no jogo para GBA, onde você pode combinar uma variedade 
+            aleatória de ingredientes e torcer para que o prato não queime; aliás, você nem consegue fazer um prato que não deu certo 
+            nesta versão da série. Você precisa saber a receita para cozinhar. Há um total de 120 receitas culinárias para colecionar. 
+            Além disso, você NÃO precisa ser o dono da cozinha para aprender receitas! Qualquer receita que você aprender antes de instalar 
+            sua cozinha ainda será salva no seu livro de receitas.
+        </p>
+
+        <p>
+            As receitas podem ser aprendidas por:
+        </p>
+
+        <ul class="text-start">
+            <li>Presenteando os aldeões: Você receberá 15 receitas ao fazer amizade com os aldeões. Ao atingir 4 notas de amizade (100 PF) com um aldeão, dê a ele um presente que ele goste e, em troca, ele lhe ensinará uma receita culinária.</li>
+            <li>Assistindo TV: O programa de TV Tasty Time, com 12 episódios, será transmitido todas as terças-feiras no canal de entretenimento da sua televisão. Às vezes, você aprenderá uma receita, às vezes, duas.</li>
+            <li>Aula de Sobremesas da Anna: À medida que você fortalece sua amizade com a Anna, você pode ativar um evento aleatório onde ela ensina você e a Manna a preparar sobremesas deliciosas.</li>
+            <li>Coleção de Receitas da Lou: A dona da pousada do Vale do Miosótis visitará o segundo andar da pousada aos domingos. Se você tiver receitas específicas no seu livro de receitas, Lou lhe ensinará alguns pratos clássicos de sua cidade natal.</li>
+            <li>Fontes Misteriosas: Há duas receitas culinárias que você pode encontrar em lugares inusitados, como a Pedra Tomatosetta e a Mensagem Engarrafada.</li>
+            <li>Por inspiração: A maioria das receitas culinárias vem da inspiração que surge depois de preparar as refeições. À medida que você usa os ingredientes, aprenderá mais receitas que os utilizam.</li>
+        </ul>
+
+        <h4>Cozinhando Refeições</h4>
+        <p>
+            Para preparar uma refeição, vá até a cozinha e pressione o botão A. Escolha a receita no livro de receitas da cozinha para ver os ingredientes que você precisa ter na mochila ou na geladeira para preparar o prato com sucesso. 
+            Se você tiver todos os ingredientes necessários, terá mais duas opções: 1) o nível de qualidade dos ingredientes (classificação por estrelas e nível de produto animal) e 2) o número de pratos que deseja preparar.
+        </p>
+
+        <p>
+            Pressione o botão Y para priorizar entre usar ingredientes de menor qualidade e ingredientes de maior qualidade e pressione o controle esquerdo para cima ou para baixo para selecionar a quantidade. 
+            Você pode preparar até 9 pratos do prato selecionado. Em seguida, pressione o botão A para confirmar.
+        </p>
+    </div>
+</section>
+
+<section id="newsletter" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Assine nossa Newsletter</h2>
+        <p class="mb-4">Receba as ultimas novidades, dicas e atualizações diretamente no seu email!</p>
+        <form action="#" method="POST" class="row g-3 justify-content-center">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="col-md-6">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Seu Email" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success btn-lg">Assinar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-success text-white text-center py-3">&copy Todos os direitos reservados - 2025 - Michael das Mercês da Silva</footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/script.js"></script>
+</body>
+</html>
