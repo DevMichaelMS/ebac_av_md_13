@@ -19,10 +19,9 @@ O blog é inspirado no universo do jogo *Story of Seasons: Friends of Mineral To
 - 📬 Formulário funcional para newsletter com validação de campos  
 - 📱 Layout 100% responsivo com uso de Bootstrap
 
-## 📸 Captura de Tela
+## 📸 Preview
 
 ![preview do projeto](https://raw.githubusercontent.com/DevMichaelMS/ebac_av_md_13/main/imgs/preview.png)  
-<sub>Imagem meramente ilustrativa. Atualize com um screenshot real do projeto.</sub>
 
 ## 🚀 Acesse o Projeto
 
