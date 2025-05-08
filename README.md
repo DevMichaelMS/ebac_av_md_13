@@ -32,16 +32,15 @@ O blog é inspirado no universo do jogo *Story of Seasons: Friends of Mineral To
 ## 📌 Como executar localmente
 
 1. Clone o repositório:  
-   git clone https://github.com/DevMichaelMS/ebac_av_md_13.git
+   - git clone https://github.com/DevMichaelMS/ebac_av_md_13.git
 
 2. Acesse a pasta do projeto:
-   cd ebac_av_md_13
+   - cd ebac_av_md_13
 
-3. Abra o arquivo index.html no seu navegador.
+4. Abra o arquivo index.html no seu navegador.
 
 
-✍️ Autor
-
+✍️ Autor:
 Desenvolvido por Michael das Mercês da Silva 💼
 
 Curso Fullstack Java - EBAC 🎓
