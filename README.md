@@ -41,6 +41,8 @@ O blog é inspirado no universo do jogo *Story of Seasons: Friends of Mineral To
 
 
 ✍️ Autor
+
 Desenvolvido por Michael das Mercês da Silva 💼
+
 Curso Fullstack Java - EBAC 🎓
 
