@@ -21,7 +21,7 @@ O blog é inspirado no universo do jogo *Story of Seasons: Friends of Mineral To
 
 ## 📸 Captura de Tela
 
-![preview do projeto](https://ebac-av-md-13.vercel.app/assets/img/screen.jpg)  
+![preview do projeto](https://raw.githubusercontent.com/DevMichaelMS/ebac_av_md_13/main/imgs/review.jpg)  
 <sub>Imagem meramente ilustrativa. Atualize com um screenshot real do projeto.</sub>
 
 ## 🚀 Acesse o Projeto
